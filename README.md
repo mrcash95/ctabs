@@ -1,5 +1,5 @@
 # CTabs
-This is a Google Chrome extension inspired by the TabShots extension ( https://www.securitee.org/files/tabnabbing_asiaccs2013.pdf ), 
+This is a Google Chrome extension inspired by the TabShots extension (https://www.securitee.org/files/tabnabbing_asiaccs2013.pdf), 
 to combat Tabnabbing attack. I would like to add few features in this extension:
 
 (1)Pop out notification (prompt box) if the result from the page comparing is over 10%

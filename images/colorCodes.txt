@@ -1,0 +1,5 @@
+02f0ff = turquoise
+000100 = black
+fb0b0b = red
+CTabs has detected that this website might be helping in delivering Tabnabbing attack.
+Would you like to blacklist this website?

@@ -1,0 +1,25 @@
+<html>
+
+<body>
+    <button onclick="removeOverlay()">Remove</button>
+    <p>An attacker can take advantage of these differences in order to bypass any simple countermeasures that search for all three conditions in order to flag a page as malicious (See Section 5). In the case of Chrome, assuming that a user has many tabs open, the attacker can avoid the title change altogether, since it will likely not be visible to the user anyway.</p>
+    <p id="change">An attacker can take advantage of these differences in order to bypass any simple countermeasures that search for all three conditions in order to flag a page as malicious (See Section 5). In the case of Chrome, assuming that a user has many tabs open, the attacker can avoid the title change altogether, since it will likely not be visible to the user anyway.</p>
+    <p>An attacker can take advantage of these differences in order to bypass any simple countermeasures that search for all three conditions in order to flag a page as malicious (See Section 5). In the case of Chrome, assuming that a user has many tabs open, the attacker can avoid the title change altogether, since it will likely not be visible to the user anyway.</p>
+</body>
+
+<script>
+    function removeOverlay() {
+        var elements = document.getElementsByTagName("img");
+        if (elements.length > 0) {
+            elements[0].parentNode.removeChild(elements[0]);
+        }
+    }
+
+    function change() {
+        document.getElementById("change").setAttribute("style", "background-color: yellow;");
+    }
+
+    setTimeout(change, 3000);
+</script>
+
+</html>

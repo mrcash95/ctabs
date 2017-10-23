@@ -1,4 +1,4 @@
-# CTabs
+# CTabs [INCOMPLETE]
 This is a Google Chrome extension inspired by the TabShots extension (https://www.securitee.org/files/tabnabbing_asiaccs2013.pdf), 
 to combat Tabnabbing attack. I would like to add few features in this extension:
 

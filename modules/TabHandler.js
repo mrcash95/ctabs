@@ -68,11 +68,20 @@ CTabs.TabHandler.processCaptures = function (tabId, baseCapture, newCapture) {
         CTabs.TabStore.storeResult(tabId, difference);
 
         var start2 = new Date().getTime();
-        CTabs.TabHandler.adaptChrome(tabId, difference);
+        var skor = CTabs.TabHandler.adaptChrome(tabId, difference);
+        skor=skor.toFixed(2);
+        alert('The percentage of changes of this web page is ' + skor +'%');
+        
+        if(skor>10){
+            
+                alert('Dear user, Tabnabbing attack might be attempted in this website because the changes is '+skor +'%. Please check the color of CTabs icon. If the color is YELLOW or RED, please be careful in submitting your data.' );
+            
+                   
+                   }
         
         CTabs.TabHandler.injectImage(tabId, difference);
         
-        alert('Test color'); //test to alert the page
+        
         
         var end = new Date().getTime();
         //CTabs.Logger.error("BROWSER UPDATE TIME: " + (end - start2));
@@ -102,7 +111,7 @@ CTabs.TabHandler.adaptChrome = function (tabId, result) {
     var color = [255, 0, 0, 200]; //Default is bad = red
     if (score <= 10) {
         //Probably ok
-        color = [0, 255, 0, 200];//green
+        color = [0, 255, 0, 200]; //green
     } else if (score <= 40) {
         //Questionable
         color = [255, 255, 0, 200]; //yellow
@@ -116,6 +125,8 @@ CTabs.TabHandler.adaptChrome = function (tabId, result) {
         "tabId": tabId,
         "color": color
     });
+    return score; 
+    
 }
 
 /**

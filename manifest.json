@@ -1,8 +1,67 @@
 {
-    "name": "CTabs",
-    "manifest_version": 2,
-  "description": "This extension is a prototype for combating Tabnabbing attack, enchanced from TabShots Extension",
+  "manifest_version": 2,
+  "name": "CTabs",
+  "description": "This extension is a prototype for combatting Tabnabbing attack, enchanced from TabShots Extension",
   "version": "1.0",
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
   "background": {
   		"page": "ctabs.html" 
                 },
@@ -15,10 +74,10 @@
         "64" : "images/64.png"
     },
   "permissions": [
-      "*://*/*", //format for web url <http/s://www.example.com/example>
         "tabs",
   		"<all_urls>",
   		"storage",
+      //all below are from Blacklist
         "webRequest",
         "webRequestBlocking",
         "webNavigation"
